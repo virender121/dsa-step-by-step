@@ -1,0 +1,34 @@
+// !object to array
+const data = {
+    name : "pankaj",
+    age : 25,
+}
+console.log(Object.entries(data))
+// array to object
+const data1 = [
+    ['name' , "pankaj"],
+   [ 'age', 25]
+]
+console.log(Object.fromEntries(data1))
+
+// find:- return firstelement from the array according to our condition
+
+const age=[15,29,30,45,57]
+
+let b =age.find((x)=>{
+    return x>30
+})
+console.log(b)
+
+// forEach := iterates on the whole array like for loop
+
+const array1 = ['akash', 'rakesh', 'sonu'];
+
+array1.forEach(e => console.log(e));
+
+// setTimeout
+function sayHi() {
+    window.alert('Hello');
+  }
+  
+  setTimeout(sayHi, 1000);
